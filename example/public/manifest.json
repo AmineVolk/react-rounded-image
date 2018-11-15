@@ -1,0 +1,8 @@
+{
+  "short_name": "react-rounded-image",
+  "name": "react-rounded-image",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
