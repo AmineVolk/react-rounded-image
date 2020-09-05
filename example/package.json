@@ -3,7 +3,6 @@
   "homepage": "https://AmineVolk.github.io/react-rounded-image",
   "version": "0.0.0",
   "license": "MIT",
-  "private": true,
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
