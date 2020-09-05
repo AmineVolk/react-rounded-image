@@ -14,22 +14,23 @@ npm install --save react-rounded-image
 
 ```jsx
 import React, { Component } from "react";
-import ExampleComponent from "react-rounded-image";
-import MyPhoto from "./me.jpg";
+import ReactRoundedImage from "react-rounded-image";
+import MyPhoto from "./images/me.jpg";
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <ExampleComponent image={MyPhoto} />
-        <ExampleComponent
+      <div style={{ display: "flex" }}>
+        <ReactRoundedImage image={MyPhoto} />
+        <ReactRoundedImage
           image={MyPhoto}
           roundedColor="#321124"
           imageWidth="150"
           imageHeight="150"
           roundedSize="13"
         />
-        <ExampleComponent
+
+        <ReactRoundedImage
           image={MyPhoto}
           roundedColor="#66A5CC"
           imageWidth="120"
@@ -37,12 +38,7 @@ export default class App extends Component {
           roundedSize="8"
         />
 
-        <ExampleComponent
-          image={MyPhoto}
-          roundedSize="0"
-          imageWidth="110"
-          imageHeight="110"
-        />
+        <ReactRoundedImage image={MyPhoto} roundedSize="0" imageWidth="110" imageHeight="110" />
       </div>
     );
   }
