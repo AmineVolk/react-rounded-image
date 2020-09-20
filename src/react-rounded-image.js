@@ -1,41 +1,60 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const ReactRoundedImage = ({
-  roundedColor,
-  imageWidth,
-  imageHeight,
-  roundedSize,
-  image,
-}) => {
-  return (
-    <div
-      style={{
-        background: `${roundedColor}`,
-        width: `${imageWidth}px`,
-        height: `${imageHeight}px`,
-        borderRadius: "50%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <img
+class ReactRoundedImage extends React.Component {
+  constructor(props) {
+    super();
+    this.state = {
+      roundedColor: props.roundedColor,
+      hoverColor: props.hoverColor,
+      isHover: false,
+    };
+  }
+
+  render() {
+    const {
+      roundedColor,
+      imageWidth,
+      imageHeight,
+      roundedSize,
+      hoverColor,
+      image,
+    } = this.props;
+    return (
+      <div
+        onMouseEnter={() => this.setState({ isHover: true })}
+        onMouseLeave={() => this.setState({ isHover: false })}
         style={{
-          width: `${imageWidth - roundedSize}px`,
-          height: `${imageHeight - roundedSize}px`,
+          background: `${
+            this.state.isHover && hoverColor != "" ? hoverColor : roundedColor
+          }`,
+          width: `${imageWidth}px`,
+          height: `${imageHeight}px`,
           borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          transition: "all 0.5s ease",
         }}
-        src={image}
-      />
-    </div>
-  );
-};
+      >
+        <img
+          style={{
+            width: `${imageWidth - roundedSize}px`,
+            height: `${imageHeight - roundedSize}px`,
+            borderRadius: "50%",
+          }}
+          src={image}
+        />
+      </div>
+    );
+  }
+}
 ReactRoundedImage.propTypes = {
   imageWidth: PropTypes.string.isRequired,
   imageHeight: PropTypes.string.isRequired,
   roundedSize: PropTypes.string.isRequired,
   roundedColor: PropTypes.string.isRequired,
+  hoverColor: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 };
 ReactRoundedImage.defaultProps = {
@@ -43,5 +62,6 @@ ReactRoundedImage.defaultProps = {
   imageHeight: "200",
   roundedSize: "20",
   roundedColor: "#1B3D50",
+  hoverColor: "",
 };
 export default ReactRoundedImage;

@@ -1,6 +1,6 @@
 # react-rounded-image
 
-> Convert an image into a rounded image and you can also change the circle's color
+> Convert an image into a rounded image
 
 [![NPM](https://img.shields.io/npm/v/react-rounded-image.svg)](https://www.npmjs.com/package/react-rounded-image) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -48,6 +48,32 @@ export default class App extends Component {
 ## Results for the example
 
 <img src="./result_example.png" alt="Result"/>
+
+## Adding hover color
+
+```jsx
+<ReactRoundedImage
+  image={MyPhoto}
+  roundedColor="#321124"
+  imageWidth="150"
+  imageHeight="150"
+  roundedSize="13"
+  hoverColor="#DD1144"
+/>
+```
+
+![Result](https://raw.githubusercontent.com/AmineVolk/react-rounded-image/master/react-rounded-image-hover.gif)
+
+## Properties
+
+| Propertie    | Description        |
+| ------------ | ------------------ |
+| image        | The image          |
+| imageWidth   | The image's width  |
+| imageHeight  | The image's height |
+| roundedColor | The rounded color  |
+| roundedSize  | The rounded size   |
+| hoverColor   | The hover color    |
 
 ## License
 

@@ -1,8 +1,8 @@
 {
   "name": "react-rounded-image",
-  "version": "2.0.10",
-	"description": "Convert an image into a rounded image and you can also change the circle's color",
-	"main": "./lib/react-rounded-image.js",
+  "version": "2.0.11",
+  "description": "Convert an image into a rounded image and you can also change the circle's color",
+  "main": "./lib/react-rounded-image.js",
   "author": "AmineVolk",
   "license": "MIT",
   "repository": "AmineVolk/react-rounded-image",
@@ -16,8 +16,8 @@
     "js"
   ],
   "scripts": {
-		"build": "webpack",
-		"prepublishOnly": "webpack --mode=production"
+    "build": "webpack",
+    "prepublishOnly": "webpack --mode=production"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
