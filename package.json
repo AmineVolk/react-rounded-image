@@ -49,5 +49,8 @@
   },
   "files": [
     "lib"
-  ]
+  ],
+  "publishConfig":{ 
+    "registry": "https://npm.pkg.github.com/@AmineVolk" 
+  }
 }
