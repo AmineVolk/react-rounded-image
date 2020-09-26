@@ -45,7 +45,7 @@ export default class App extends Component {
 }
 ```
 
-## Results for the example
+# Examples
 
 <img src="./result_example.png" alt="Result"/>
 
@@ -64,7 +64,7 @@ export default class App extends Component {
 
 ![Result](https://raw.githubusercontent.com/AmineVolk/react-rounded-image/master/react-rounded-image-hover.gif)
 
-## Properties
+# Properties
 
 | Propertie    | Description        |
 | ------------ | ------------------ |
@@ -77,4 +77,6 @@ export default class App extends Component {
 
 ## License
 
-MIT © [AmineVolk](https://github.com/AmineVolk)
+> You can check out the full license [here](https://github.com/AmineVolk/react-rounded-image/blob/master/LICENSE)
+
+This project is licensed under the terms of the **MIT** license.
