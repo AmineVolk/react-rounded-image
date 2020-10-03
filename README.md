@@ -28,6 +28,7 @@ export default class App extends Component {
           imageWidth="150"
           imageHeight="150"
           roundedSize="13"
+          borderRadius="70"
         />
 
         <ReactRoundedImage
@@ -36,6 +37,7 @@ export default class App extends Component {
           imageWidth="120"
           imageHeight="120"
           roundedSize="8"
+          borderRadius="15"
         />
 
         <ReactRoundedImage image={MyPhoto} roundedSize="0" imageWidth="110" imageHeight="110" />
@@ -66,14 +68,16 @@ export default class App extends Component {
 
 # Properties
 
-| Propertie    | Description        |
-| ------------ | ------------------ |
-| image        | The image          |
-| imageWidth   | The image's width  |
-| imageHeight  | The image's height |
-| roundedColor | The rounded color  |
-| roundedSize  | The rounded size   |
-| hoverColor   | The hover color    |
+| Propertie    | Description                    |
+| ------------ | -------------------------------|
+| image        | The image                      |
+| imageWidth   | The image's width              |
+| imageHeight  | The image's height             |
+| roundedColor | The rounded color              |
+| roundedSize  | The rounded size               |
+| hoverColor   | The hover color                |
+| borderRadius | The border radius(default 50%) |
+
 
 ## License
 

@@ -19,6 +19,7 @@ class ReactRoundedImage extends React.Component {
       roundedSize,
       hoverColor,
       image,
+      borderRadius = "50%"
     } = this.props;
     return (
       <div
@@ -30,7 +31,7 @@ class ReactRoundedImage extends React.Component {
           }`,
           width: `${imageWidth}px`,
           height: `${imageHeight}px`,
-          borderRadius: "50%",
+          borderRadius:borderRadius === "50%" ? "50%" : `${borderRadius}px`,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -41,7 +42,7 @@ class ReactRoundedImage extends React.Component {
           style={{
             width: `${imageWidth - roundedSize}px`,
             height: `${imageHeight - roundedSize}px`,
-            borderRadius: "50%",
+            borderRadius:borderRadius === "50%" ? "50%" : `${borderRadius - (roundedSize/2)}px`,
           }}
           src={image}
         />
