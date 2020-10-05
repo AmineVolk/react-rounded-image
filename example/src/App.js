@@ -7,13 +7,19 @@ export default class App extends Component {
     return (
       <div style={{ display: "flex" }}>
         <ReactRoundedImage image={MyPhoto} />
+
+        <div style={{ width: "10px" }}/>
+
         <ReactRoundedImage
           image={MyPhoto}
           roundedColor="#321124"
           imageWidth="150"
-          imageHeight="150"
+          imageHeight="180"
           roundedSize="13"
+          borderRadius="70"
         />
+
+        <div style={{ width: "10px" }}/>
 
         <ReactRoundedImage
           image={MyPhoto}
@@ -21,7 +27,10 @@ export default class App extends Component {
           imageWidth="120"
           imageHeight="120"
           roundedSize="8"
+          borderRadius="15"
         />
+
+        <div style={{ width: "10px" }}/>
 
         <ReactRoundedImage
           image={MyPhoto}
