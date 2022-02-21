@@ -5,7 +5,6 @@
   "main": "./lib/react-rounded-image.js",
   "author": "AmineVolk",
   "license": "MIT",
-  "repository": "AmineVolk/react-rounded-image",
   "bugs": {
     "url": "https://github.com/AmineVolk/react-rounded-image/issues"
   },
@@ -53,8 +52,5 @@
   },
   "files": [
     "lib"
-  ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@AmineVolk"
-  }
+  ]
 }
