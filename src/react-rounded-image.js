@@ -20,6 +20,7 @@ class ReactRoundedImage extends React.Component {
       hoverColor,
       image,
       borderRadius,
+      hoverShadow,
     } = this.props;
     return (
       <div
@@ -36,6 +37,10 @@ class ReactRoundedImage extends React.Component {
           justifyContent: "center",
           alignItems: "center",
           transition: "all 0.5s ease",
+          boxShadow:
+            this.state.isHover && hoverShadow
+              ? "5px 5px 15px 5px #9f9f9f"
+              : "inherit",
         }}
       >
         <img
@@ -61,6 +66,7 @@ ReactRoundedImage.propTypes = {
   hoverColor: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   borderRadius: PropTypes.string.isRequired,
+  hoverShadow: PropTypes.bool,
 };
 ReactRoundedImage.defaultProps = {
   imageWidth: "200",
@@ -69,5 +75,6 @@ ReactRoundedImage.defaultProps = {
   roundedColor: "#1B3D50",
   hoverColor: "",
   borderRadius: "50%",
+  hoverShadow: false,
 };
 export default ReactRoundedImage;

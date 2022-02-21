@@ -17,6 +17,7 @@ export default class App extends Component {
           imageHeight="180"
           roundedSize="13"
           borderRadius="70"
+          hoverShadow
         />
 
         <div style={{ width: "10px" }}/>

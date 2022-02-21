@@ -77,6 +77,8 @@ export default class App extends Component {
 | roundedSize  | The rounded size               |
 | hoverColor   | The hover color                |
 | borderRadius | The border radius(default 50%) |
+| hoverShadow | Hover shadow animation (default false) |
+
 
 ## Contributors ✨
 
