@@ -1,6 +1,6 @@
 {
   "name": "react-rounded-image",
-  "version": "2.0.13",
+  "version": "2.0.14",
   "description": "Convert an image into a rounded image and you can also change the circle's color",
   "main": "./lib/react-rounded-image.js",
   "author": "AmineVolk",
