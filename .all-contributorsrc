@@ -5,7 +5,7 @@
   "imageSize": 100,
   "commit": false,
   "contributors": [
-   {
+    {
       "login": "AmineVolk",
       "name": "HamdiAmine",
       "avatar_url": "https://avatars1.githubusercontent.com/u/37228315?v=4",
@@ -19,6 +19,15 @@
       "name": "Dmytro Vakuliuk",
       "avatar_url": "https://avatars3.githubusercontent.com/u/15347646?s=460&u=a585863c8d898ac96b97e483fc33dcd31e2b9ae4&v=4",
       "profile": "https://github.com/vakyla98",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "nemzyxt",
+      "name": "nemuel wainaina",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94122064?v=4",
+      "profile": "https://github.com/nemzyxt",
       "contributions": [
         "code"
       ]
