@@ -13,9 +13,9 @@ npm install --save react-rounded-image
 ## Usage
 
 ```jsx
-import React, { Component } from "react";
-import ReactRoundedImage from "react-rounded-image";
-import MyPhoto from "./images/me.jpg";
+import React, { Component } from "react"
+import ReactRoundedImage from "react-rounded-image"
+import MyPhoto from "./images/me.jpg"
 
 export default class App extends Component {
   render() {
@@ -40,9 +40,14 @@ export default class App extends Component {
           borderRadius="15"
         />
 
-        <ReactRoundedImage image={MyPhoto} roundedSize="0" imageWidth="110" imageHeight="110" />
+        <ReactRoundedImage
+          image={MyPhoto}
+          roundedSize="0"
+          imageWidth="110"
+          imageHeight="110"
+        />
       </div>
-    );
+    )
   }
 }
 ```
@@ -68,17 +73,16 @@ export default class App extends Component {
 
 # Properties
 
-| Propertie    | Description                    |
-| ------------ | ------------------------------ |
-| image        | The image                      |
-| imageWidth   | The image's width              |
-| imageHeight  | The image's height             |
-| roundedColor | The rounded color              |
-| roundedSize  | The rounded size               |
-| hoverColor   | The hover color                |
-| borderRadius | The border radius(default 50%) |
-| hoverShadow | Hover shadow animation (default false) |
-
+| Propertie    | Description                            |
+| ------------ | -------------------------------------- |
+| image        | The image                              |
+| imageWidth   | The image's width                      |
+| imageHeight  | The image's height                     |
+| roundedColor | The rounded color                      |
+| roundedSize  | The rounded size                       |
+| hoverColor   | The hover color                        |
+| borderRadius | The border radius(default 50%)         |
+| hoverShadow  | Hover shadow animation (default false) |
 
 ## Contributors ✨
 
@@ -88,12 +92,36 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://github.com/AmineVolk"><img src="https://avatars1.githubusercontent.com/u/37228315?v=4" width="100px;" alt=""/><br /><sub><b>HamdiAmine</b></sub></a><br /><a href="https://github.com/AmineVolk/react-rounded-image/commits?author=AmineVolk" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/vakyla98"><img src="https://avatars3.githubusercontent.com/u/15347646?s=460&u=a585863c8d898ac96b97e483fc33dcd31e2b9ae4&v=4" width="100px;" alt=""/><br /><sub><b>Dmytro Vakuliuk
-</b></sub></a><br /><a href="https://github.com/AmineVolk/react-rounded-image/commits?author=vakyla98" title="Code">💻</a></td>    
-  </tr>
+    <tr>
+        <td align="center">
+            <a href="https://github.com/AmineVolk">
+                <img src="https://avatars1.githubusercontent.com/u/37228315?v=4" width="100px;" alt="" /><br />
+                <sub><b>HamdiAmine</b></sub>
+            </a>
+            <br />
+            <a href="https://github.com/AmineVolk/react-rounded-image/commits?author=AmineVolk" title="Code">💻</a>
+        </td>
+        <td align="center">
+            <a href="https://github.com/v-excelsior">
+                <img src="https://avatars3.githubusercontent.com/u/15347646?s=460&u=a585863c8d898ac96b97e483fc33dcd31e2b9ae4&v=4" width="100px;" alt="" /><br />
+                <sub><b>Dmytro Vakuliuk </b></sub>
+            </a>
+            <br />
+            <a href="https://github.com/AmineVolk/react-rounded-image/commits?author=v-excelsior" title="Code">💻</a>
+        </td>
+        <td align="center">
+            <a href="https://github.com/nemzyxt">
+                <img src="https://avatars.githubusercontent.com/u/94122064?v=4" width="100px;" alt="" /><br />
+                <sub>
+                    <b>Nemuel Wainaina</b>
+                </sub>
+            </a>
+            <br />
+            <a href="https://github.com/AmineVolk/react-rounded-image/commits?author=nemzyxt" title="Code">💻</a>
+        </td>
+    </tr>
 </table>
+
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
